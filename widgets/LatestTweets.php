@@ -5,12 +5,12 @@
  * @package toolbox
  */
 
-class twitter extends WP_Widget{
+class LatestTweets extends WP_Widget{
 
     /*function construct*/
     public function __construct() {
         parent::__construct(
-            'twitter',esc_html__('M3: Twitter','toolbox'),
+            'LatestTweets',esc_html__('M3: Latest Tweets','toolbox'),
             array('description'=>esc_html__('Update news from your twitter', 'toolbox'))
         );
     }
@@ -100,8 +100,8 @@ class twitter extends WP_Widget{
         return $instance;
     }
 }
-function twitter(){
-    register_widget('twitter');
+function LatestTweets(){
+    register_widget('LatestTweets');
 }
-add_action('widgets_init','twitter');
+add_action('widgets_init','LatestTweets');
 ?>

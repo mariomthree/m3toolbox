@@ -5,7 +5,7 @@
  * @package toolbox
  */
 
-    class social_links extends WP_Widget {
+    class SocialLinks extends WP_Widget {
 
         private $socials = array(
                 'facebook'  => array(
@@ -78,7 +78,7 @@
 
         public function __construct() {
             parent::__construct(
-                'social_links',esc_html__('M3: Social Links','toolbox'), 
+                'SocialLinks',esc_html__('M3: Social Links','toolbox'), 
                 array('description'=>esc_html__('Displays your social profile', 'toolbox'))
             );
 
@@ -144,9 +144,9 @@
     
     }
 
-add_action('widgets_init', 'social_links');
+add_action('widgets_init', 'SocialLinks');
 
-function social_links()
+function SocialLinks()
 {
-    register_widget('social_links');
+    register_widget('SocialLinks');
 }

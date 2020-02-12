@@ -6,7 +6,7 @@
  *
  */
 
-class facebook extends WP_Widget{
+class FacebookPage extends WP_Widget{
 
     /*function construct*/
     public function __construct() {
@@ -71,8 +71,8 @@ class facebook extends WP_Widget{
         return $instance;
     }
 }
-function facebook(){
-    register_widget('facebook');
+function FacebookPage(){
+    register_widget('FacebookPage');
 }
-add_action('widgets_init','facebook');
+add_action('widgets_init','FacebookPage');
 ?>

@@ -5,13 +5,13 @@
  * @package toolbox
  */
 
-class contact_info extends WP_Widget{
+class ContactInfo extends WP_Widget{
 
 
       public function __construct() {
           parent::__construct(
-            'contact_info',esc_html__('M3: Contact info','toolbox'),
-             array('description'=>esc_html__('Display Contact info', 'toolbox'))
+            'ContactInfo',esc_html__('M3: Contact Info','toolbox'),
+             array('description'=>esc_html__('Display Contact Info', 'toolbox'))
           );
       }
 
@@ -71,7 +71,7 @@ class contact_info extends WP_Widget{
 
       public function form($instance){
           $instance =   wp_parse_args($instance,array(
-              'title'       =>  'Contact info',
+              'title'       =>  '',
               'address'     =>  '',
               'phone'       =>  '',
               'email'       =>  '',
@@ -108,8 +108,8 @@ class contact_info extends WP_Widget{
 
   }
 
-  function contact_info(){
-    register_widget('contact_info');
+  function ContactInfo(){
+    register_widget('ContactInfo');
   }
-  add_action('widgets_init','contact_info');
+  add_action('widgets_init','ContactInfo');
 ?>
