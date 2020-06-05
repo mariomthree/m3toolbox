@@ -1,6 +1,7 @@
 # M3Toolbox
 
-  Plugin for <a url="https://github.com/mariomthree/webnews-premium-theme-wp"> WebNews Premium Theme </a>
+  Plugin for WebNews Premium Theme 
+  Link for theme: https://github.com/mariomthree/webnews-premium-theme-wp
  
   ### Social Links
      Widgets for social networks:
